@@ -18,11 +18,15 @@ df_b = df.iloc[len(df)//2:]
 # create a histogram of the A improvement column
 plt.hist(df_a['A improvement'])
 plt.title('A improvement')
+plt.xlabel('Improvement')
+plt.ylabel('Count')
 plt.show()
 
-# # create a histogram of the B improvement column
+# create a histogram of the B improvement column
 plt.hist(df_b['B improvement'])
 plt.title('B improvement')
+plt.xlabel('Improvement')
+plt.ylabel('Count')
 plt.show()
 
 # print out summary statistics
@@ -54,18 +58,26 @@ df_f_b = df_f.iloc[len(df_f)//2:]
 # make histograms for each dataframe
 plt.hist(df_m_a['A improvement'])
 plt.title('Improvement in Cholesterol Levels in Males with Drug A')
+plt.xlabel('Improvement')
+plt.ylabel('Count')
 plt.show()
 
 plt.hist(df_m_b['B improvement'])
 plt.title('Improvement in Cholesterol Levels in Males with Drug B')
+plt.xlabel('Improvement')
+plt.ylabel('Count')
 plt.show()
 
 plt.hist(df_f_a['A improvement'])
 plt.title('Improvement in Cholesterol Levels in Females with Drug A')
+plt.xlabel('Improvement')
+plt.ylabel('Count')
 plt.show()
 
 plt.hist(df_f_b['B improvement'])
 plt.title('Improvement in Cholesterol Levels in Females with Drug B')
+plt.xlabel('Improvement')
+plt.ylabel('Count')
 plt.show()
 
 # print out summary statistics for each dataframe
